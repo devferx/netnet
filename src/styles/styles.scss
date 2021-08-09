@@ -1,0 +1,21 @@
+@import "./theme/colors";
+@import "./theme/fonts";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Avenir Next";
+  font-size: 16px;
+}
+
+.container {
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+}
