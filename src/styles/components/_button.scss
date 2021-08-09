@@ -1,0 +1,13 @@
+@import "../theme/colors";
+
+.button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  background-color: $white;
+  cursor: pointer;
+}
