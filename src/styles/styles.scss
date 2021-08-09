@@ -10,12 +10,16 @@
 html {
   font-family: "Avenir Next";
   font-size: 16px;
+  color: white;
 }
 
 .container {
   max-width: 500px;
   min-height: 100vh;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
+  background: $black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+@import "./components/header";

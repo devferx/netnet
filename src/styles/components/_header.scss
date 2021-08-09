@@ -1,0 +1,19 @@
+.header {
+  padding: 16px;
+
+  img {
+    width: 24px;
+  }
+
+  .header__menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 24px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
