@@ -14,14 +14,16 @@ html {
 }
 
 .container {
+  position: relative;
   max-width: 500px;
   min-height: 100vh;
   margin: 0 auto;
-  overflow-x: hidden;
   background: $black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #000;
+  padding-bottom: 67px;
 }
 
 @import "./components/header";
 @import "./components/hero";
+@import "./components/bottom-bar";
 @import "./components/button";
