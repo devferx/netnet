@@ -1,16 +1,20 @@
 import React from "react";
-import { BottomBar } from "./components/BottomBar";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
+import { Layout } from "./components/Layout";
+import { Home } from "./containers/Home";
+import { NotFound } from "./containers/NotFound";
 
 const App = () => {
   return (
-    <div className="container">
-      <Header />
-      <Hero />
-      <BottomBar />
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   );
 };
 
