@@ -7,15 +7,21 @@ import playIcon from "../assets/icons/play.svg";
 export const Hero = () => {
   return (
     <section className="hero">
-      <img className="hero__image" src={matrixCover} alt="Matrix cover" />
+      <div className="hero__image-container">
+        <img src={matrixCover} alt="Matrix cover" />
 
-      <ul className="hero__categories">
-        <li>Surrealista</li>
-        <li>Distópico</li>
-        <li>Hábil</li>
-        <li>Siniestro</li>
-        <li>Emocionante</li>
-      </ul>
+        <ul className="hero__categories">
+          <li>Surrealista</li>
+          <div className="dot" />
+          <li>Distópico</li>
+          <div className="dot" />
+          <li>Hábil</li>
+          <div className="dot" />
+          <li>Siniestro</li>
+          <div className="dot" />
+          <li>Emocionante</li>
+        </ul>
+      </div>
 
       <div className="hero__actions">
         <div className="hero__actions__item">
