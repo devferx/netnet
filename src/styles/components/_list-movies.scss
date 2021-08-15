@@ -1,0 +1,18 @@
+.list-movies {
+  margin-top: 16px;
+  padding: 0 16px;
+
+  .list-movies__title {
+    font-weight: bold;
+    font-size: 17.5px;
+    line-height: 24px;
+  }
+
+  .list-movies__container {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    overflow-x: auto;
+  }
+}
