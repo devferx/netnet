@@ -1,14 +1,34 @@
-import React from "react";
-import matrixCover from "../assets/images/covers/matrix.png";
+import React, { useState, useEffect } from "react";
+import matrixCover from "../assets/images/covers/matrix-cover.png";
 import plusIcon from "../assets/icons/plus.svg";
 import infoIcon from "../assets/icons/info.svg";
 import playIcon from "../assets/icons/play.svg";
 
+import matrixMovie from "../assets/images/matrix.mp4";
+
 export const Hero = () => {
+  const [isCoverActive, setIsCoverActive] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsCoverActive(false);
+    }, 3000);
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero__image-container">
-        <img src={matrixCover} alt="Matrix cover" />
+        {isCoverActive ? (
+          <img className="cover" src={matrixCover} alt="Matrix cover" />
+        ) : (
+          <video
+            className="video"
+            src={matrixMovie}
+            autoPlay
+            loop
+            muted
+          ></video>
+        )}
 
         <ul className="hero__categories">
           <li>Surrealista</li>
