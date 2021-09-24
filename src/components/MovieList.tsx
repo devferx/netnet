@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
@@ -11,7 +12,9 @@ export const MovieList = ({ title, images }: Props) => {
       <h3 className="list-movies__title">{title}</h3>
       <div className="list-movies__container">
         {images.map((image, id) => (
-          <img key={id} src={image} width="192px" />
+          <Link key={id} to="/movie">
+            <img src={image} width="192px" />
+          </Link>
         ))}
       </div>
     </section>

@@ -5,6 +5,7 @@ import infoIcon from "../assets/icons/info.svg";
 import playIcon from "../assets/icons/play.svg";
 
 import matrixMovie from "../assets/images/matrix.mp4";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const [isCoverActive, setIsCoverActive] = useState(true);
@@ -48,10 +49,12 @@ export const Hero = () => {
           <img src={plusIcon} alt="Plus icon" />
           <p>Mi lista</p>
         </div>
-        <button className="button">
-          <img src={playIcon} alt="Play Icon" />
-          <span>Reproducir</span>
-        </button>
+        <Link to="/movie" style={{ textDecoration: "none" }}>
+          <button className="button">
+            <img src={playIcon} alt="Play Icon" />
+            <span>Reproducir</span>
+          </button>
+        </Link>
         <div className="hero__actions__item">
           <img src={infoIcon} alt="Info icon" />
           <p>Info</p>

@@ -23,6 +23,8 @@ html {
   padding-bottom: 67px;
 }
 
+@import "./containers/movie";
+
 @import "./components/header";
 @import "./components/hero";
 @import "./components/bottom-bar";

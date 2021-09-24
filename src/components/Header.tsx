@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import logo from "/src/assets/images/logo-netflix.png";
 
 export const Header = () => {
@@ -8,13 +9,13 @@ export const Header = () => {
 
       <ul className="header__menu">
         <li>
-          <a href="#">Series</a>
+          <Link to="/">Series</Link>
         </li>
         <li>
-          <a href="#">Películas</a>
+          <Link to="/">Películas</Link>
         </li>
         <li>
-          <a href="#">Mi lista</a>
+          <Link to="/">Mi lista</Link>
         </li>
       </ul>
     </header>
